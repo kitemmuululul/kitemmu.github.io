@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Mia Pagina Personale</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1a1a2e;
-            color: #ffffff;
-            background-image: url('https://example.com/night-skyline.jpg'); /* Sostituisci con un URL valido */
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .profile-pic {
-            display: block;
-            margin: 0 auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #ffffff;
-        }
-        .social-buttons {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .social-buttons a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #ffffff;
-        }
-        .social-buttons a i {
-            font-size: 30px;
-        }
-        .content {
-            text-align: center;
-        }
-        video {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px 0;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALBUM</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000000;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .image {
+      flex: 1 1 300px;
+    }
+
+    .image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+    }
+
+    .content {
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #dddddd;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .buttons button {
+      background-color: #00ff88;
+      color: #000000;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #00cc6a;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .buttons {
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Benvenuto sulla Mia Pagina Personale</h1>
-        <img src="https://example.com/profile.jpg" alt="La Mia Foto" class="profile-pic"> <!-- Sostituisci con un URL valido -->
-        <h2>Chi Sono</h2>
-        <p>Ciao! Mi chiamo [Il Tuo Nome], e questa è la mia pagina personale. Qui puoi trovare informazioni su di me, vedere le mie foto e video, e seguirmi sui social media.</p>
-        <div class="content">
-            <h2>Le Mie Foto e Video</h2>
-            <img src="https://example.com/photo1.jpg" alt="Foto 1"> <!-- Sostituisci con un URL valido -->
-            <video controls>
-                <source src="https://example.com/video1.mp4" type="video/mp4"> <!-- Sostituisci con un URL valido -->
-                Il tuo browser non supporta il tag video.
-            </video>
-        </div>
-        <div class="social-buttons">
-            <a href="https://facebook.com/tuoprofilo" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/tuoprofilo" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/tuoprofilo" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com/in/tuoprofilo" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
+
+  <div class="container">
+    <div class="image">
+      <img src="https://via.placeholder.com/500x300.png?text=Placeholder+Immagine" alt="Immagine">
     </div>
+    <div class="content">
+      <h1>Benvenuto in ALBUM</h1>
+      <p>Scopri una nuova dimensione visiva, un'esperienza dove il design incontra l’emozione.</p>
+      <div class="buttons">
+        <button>Scopri di più</button>
+        <button>Contattaci</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
