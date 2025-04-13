@@ -2,52 +2,49 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALBUM</title>
+  <title>KITEMMU MUSIC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
       background-color: #000000;
       color: white;
-    }
-
-    .container {
+      font-family: 'Orbitron', sans-serif;
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       padding: 2rem;
-      gap: 2rem;
-      flex-wrap: wrap;
     }
 
-    .image {
-      flex: 1 1 300px;
-    }
-
-    .image img {
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      max-width: 1000px;
       width: 100%;
-      max-width: 500px;
+    }
+
+    .left img {
+      width: 300px;
       border-radius: 16px;
-      box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
     }
 
-    .content {
-      flex: 1 1 300px;
-      max-width: 500px;
+    .right {
+      flex: 1;
+      text-align: left;
     }
 
-    .content h1 {
+    .right h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
 
-    .content p {
-      font-size: 1.2rem;
+    .right p {
+      font-size: 1.1rem;
       margin-bottom: 2rem;
-      color: #dddddd;
+      color: #ccc;
     }
 
     .buttons {
@@ -56,24 +53,29 @@
       gap: 1rem;
     }
 
-    .buttons button {
+    .buttons a {
+      text-decoration: none;
       background-color: #00ff88;
-      color: #000000;
-      border: none;
+      color: #000;
       padding: 0.8rem 1.5rem;
       border-radius: 8px;
       font-size: 1rem;
-      cursor: pointer;
       transition: background 0.3s;
+      text-align: center;
+      width: fit-content;
     }
 
-    .buttons button:hover {
+    .buttons a:hover {
       background-color: #00cc6a;
     }
 
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
+        text-align: center;
+      }
+
+      .right {
         text-align: center;
       }
 
@@ -86,15 +88,16 @@
 <body>
 
   <div class="container">
-    <div class="image">
-      <img src="https://via.placeholder.com/500x300.png?text=Placeholder+Immagine" alt="Immagine">
+    <div class="left">
+      <img src="https://via.placeholder.com/300x300.png?text=Cover" alt="Copertina">
     </div>
-    <div class="content">
-      <h1>Benvenuto in ALBUM</h1>
-      <p>Scopri una nuova dimensione visiva, un'esperienza dove il design incontra l’emozione.</p>
+    <div class="right">
+      <h1>KITEMMU</h1>
+      <p>Musica cruda, visioni notturne, suoni veri. Entra nel mondo di KITEMMU.</p>
       <div class="buttons">
-        <button>Scopri di più</button>
-        <button>Contattaci</button>
+        <a href="musica.html">🎵 Album</a>
+        <a href="bio.html">👤 Bio</a>
+        <a href="contatti.html">📬 Contatti</a>
       </div>
     </div>
   </div>
